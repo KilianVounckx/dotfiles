@@ -24,8 +24,8 @@ wezterm.on("toggle-ligatures", function(window, pane)
 end)
 
 return {
-    font = wezterm.font("FiraCode"),
-    color_scheme = "Dracula",
+    font = wezterm.font("MesloLGSNerdFontMono"),
+    color_scheme = "Catppuccin Frappe",
     enable_scroll_bar = true,
     max_fps = 120,
     window_padding = {
@@ -37,16 +37,6 @@ return {
     inactive_pane_hsb = {
         saturation = 0.9,
         brightness = 0.7,
-    },
-    window_background_gradient = {
-        colors = { "darkgreen", "black" },
-        orientation = {
-            Radial = {
-                cx = 0.75,
-                cy = 0.75,
-                radius = 1.25,
-            },
-        },
     },
     keys = {
         {
