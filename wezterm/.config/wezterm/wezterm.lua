@@ -69,11 +69,6 @@ return {
             mods = "CTRL|ALT|SHIFT",
             action = wezterm.action.EmitEvent("toggle-ligatures"),
         },
-        {
-            key = 'f',
-            mods = "CTRL|ALT|SHIFT",
-            action = wezterm.action.EmitEvent("toggle-font"),
-        },
     },
     key_tables = {
         resize_pane = {
