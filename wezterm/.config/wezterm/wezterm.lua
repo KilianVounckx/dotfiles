@@ -55,6 +55,20 @@ return {
             }),
         },
         {
+            key = 'h',
+            mods = 'CTRL|SHIFT',
+            action = wezterm.action({
+                ActivatePaneDirection = "Prev",
+            }),
+        },
+        {
+            key = 'l',
+            mods = 'CTRL|SHIFT',
+            action = wezterm.action({
+                ActivatePaneDirection = "Next",
+            }),
+        },
+        {
             key = 'l',
             mods = "CTRL|ALT|SHIFT",
             action = wezterm.action.EmitEvent("toggle-ligatures"),
