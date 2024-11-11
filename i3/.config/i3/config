@@ -111,6 +111,9 @@ bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
+# Set default layout to tabbed
+workspace_layout tabbed
+
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
