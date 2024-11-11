@@ -114,6 +114,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # Set default layout to tabbed
+default_orientation vertical
 workspace_layout tabbed
 
 # toggle tiling / floating
