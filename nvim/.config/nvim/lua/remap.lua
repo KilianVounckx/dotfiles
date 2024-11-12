@@ -1,5 +1,3 @@
-vim.keymap.set("i", "jk", "<ESC>", { desc = "Go back to normal mode" })
-
 vim.keymap.set("n", "U", "<C-r>", { desc = "Redo" })
 
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "Open file explorer" })

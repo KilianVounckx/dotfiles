@@ -24,6 +24,8 @@ exec --no-startup-id picom
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch_polybar.sh
 
+exec_always --no-startup-id kanata -c $HOME/.config/kanata/config.kbd
+
 exec_always --no-startup-id feh --bg-scale $HOME/.config/backgrounds/galaxies.png
 
 bindsym $mod+space exec rofi -show combi
