@@ -45,7 +45,6 @@ local rust_analyzer = {
 }
 
 local tinymist = {}
-local typst_lsp = {}
 
 local function on_attach(event)
     local function opts_with(opts)
@@ -158,7 +157,6 @@ return {
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
             setup("tinymist", tinymist)
-            setup("typst_lsp", typst_lsp)
 
             vim.lsp.inlay_hint.enable()
 
