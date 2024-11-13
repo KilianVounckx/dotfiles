@@ -1,6 +1,7 @@
 export PS1="[\u@\h \w]\$ "
 
 alias ls='ls --color'
+alias ll='ls --color -lah'
 alias grep='grep --color'
 
 alias fzf='fzf --preview="bat --color=always {}"'
