@@ -1,5 +1,7 @@
 local bqnlsp = {}
 
+local gleam = {}
+
 local hls = {}
 
 local lua_ls = {
@@ -152,6 +154,7 @@ return {
             end
 
             setup("bqnlsp", bqnlsp)
+            setup("gleam", gleam)
             setup("hls", hls)
             setup("lua_ls", lua_ls)
             setup("roc_ls", roc_ls)
