@@ -48,6 +48,8 @@ local rust_analyzer = {
 
 local tinymist = {}
 
+local zls = {}
+
 local function on_attach(event)
     local function opts_with(opts)
         local result = { buffer = event.buf }
@@ -160,8 +162,7 @@ return {
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
             setup("tinymist", tinymist)
-
-            vim.lsp.inlay_hint.enable()
+            setup("zls", zls)
 
             vim.api.nvim_create_autocmd("BufWritePre", {
                 desc = "LSP Format",
