@@ -5,6 +5,7 @@ return {
             "gleam",
             "haskell",
             "lua",
+            "python",
             "roc",
             "rust",
             "typst",

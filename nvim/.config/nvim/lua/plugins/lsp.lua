@@ -4,6 +4,8 @@ local gleam = {}
 
 local hls = {}
 
+local jedi_language_server = {}
+
 local lua_ls = {
     on_init = function(client)
         if client.workspace_folders then
@@ -158,6 +160,7 @@ return {
             setup("bqnlsp", bqnlsp)
             setup("gleam", gleam)
             setup("hls", hls)
+            setup("jedi_language_server", jedi_language_server)
             setup("lua_ls", lua_ls)
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
