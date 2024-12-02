@@ -13,6 +13,16 @@ wezterm.on("update-right-status", function(window, pane)
     window:set_right_status(name or "")
 end)
 
+wezterm.on("toggle-font", function(window, pane)
+    local overrides = window:get_config_overrides() or {}
+    if not overrides.font then
+        overrides.font = wezterm.font("Uiua386")
+    else
+        overrides.font = nil
+    end
+    window:set_config_overrides(overrides)
+end)
+
 wezterm.on("toggle-ligatures", function(window, pane)
     local overrides = window:get_config_overrides() or {}
     if not overrides.harfbuzz_features then
@@ -72,6 +82,11 @@ return {
             key = 'l',
             mods = "CTRL|ALT|SHIFT",
             action = wezterm.action.EmitEvent("toggle-ligatures"),
+        },
+        {
+            key = 'f',
+            mods = "CTRL|ALT|SHIFT",
+            action = wezterm.action.EmitEvent("toggle-font"),
         },
     },
     key_tables = {
