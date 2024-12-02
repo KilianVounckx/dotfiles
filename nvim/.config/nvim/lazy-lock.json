@@ -17,6 +17,7 @@
   "playtime.nvim": { "branch": "main", "commit": "c59f03d4b871fe9f7cb0a9e7f242a84237600996" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
   "telescope.nvim": { "branch": "master", "commit": "85922dde3767e01d42a08e750a773effbffaea3e" },
+  "uiua.vim": { "branch": "main", "commit": "0afe909cb98553e5aec886f5e13a0637dcb671bd" },
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "which-key.nvim": { "branch": "main", "commit": "b9684c6ec54d8a8452bdcf0d613c7ad0223fc3fe" }
 }

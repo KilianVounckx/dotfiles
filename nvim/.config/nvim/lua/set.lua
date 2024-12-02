@@ -42,5 +42,6 @@ vim.opt.whichwrap:append({
 vim.filetype.add({
     extension = {
         bqn = "bqn",
+        ua = "uiua",
     },
 })

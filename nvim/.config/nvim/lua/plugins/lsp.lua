@@ -50,6 +50,8 @@ local rust_analyzer = {
 
 local tinymist = {}
 
+local uiua = {}
+
 local zls = {}
 
 local function on_attach(event)
@@ -152,6 +154,8 @@ return {
             local lspconfig = require("lspconfig")
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+            vim.lsp.inlay_hint.enable()
+
             local function setup(lsp, cfg)
                 cfg.capabilities = capabilities
                 lspconfig[lsp].setup(cfg)
@@ -165,6 +169,7 @@ return {
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
             setup("tinymist", tinymist)
+            setup("uiua", uiua)
             setup("zls", zls)
 
             vim.api.nvim_create_autocmd("BufWritePre", {
