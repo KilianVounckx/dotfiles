@@ -1,5 +1,7 @@
 local bqnlsp = {}
 
+local gdscript = {}
+
 local gleam = {}
 
 local hls = {}
@@ -162,6 +164,7 @@ return {
             end
 
             setup("bqnlsp", bqnlsp)
+            setup("gdscript", gdscript)
             setup("gleam", gleam)
             setup("hls", hls)
             setup("jedi_language_server", jedi_language_server)
