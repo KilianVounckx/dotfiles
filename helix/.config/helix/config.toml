@@ -1,0 +1,28 @@
+theme = "catppuccin_frappe"
+
+[editor]
+scrolloff = 8
+rulers = [80, 100]
+auto-pairs = false
+
+[editor.statusline]
+left = ["mode", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = ["selections", "primary-selection-length", "register"]
+right = ["spinner", "diagnostics", "file-type", "position", "total-line-numbers"]
+mode.normal = "🔀"
+mode.insert = "✏️"
+mode.select = "💡"
+
+[editor.lsp]
+display-inlay-hints = true
+goto-reference-include-declaration = false
+
+[editor.search]
+smart-case = false
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
