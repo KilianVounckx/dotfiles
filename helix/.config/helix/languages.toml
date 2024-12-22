@@ -1,0 +1,15 @@
+[language-server.roc-language-server]
+command = "roc_language_server"
+
+[[language]]
+name = "roc"
+scope = "source.roc"
+injection-regex = "roc"
+file-types = ["roc"]
+comment-tokens = "#"
+indent = { unit = "    ", tab-width = 4 }
+language-servers = ["roc-language-server"]
+
+[[grammer]]
+name = "roc"
+source = { git = "https://github.com/faldor20/tree-sitter-roc.git", rev = "7d29fc24b36119494b4dc3f3d967075e261706c1" }
