@@ -3,6 +3,7 @@ command = "roc_language_server"
 
 [[language]]
 name = "roc"
+auto-format = true
 scope = "source.roc"
 injection-regex = "roc"
 file-types = ["roc"]
