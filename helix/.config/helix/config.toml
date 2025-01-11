@@ -26,3 +26,6 @@ tab = "all"
 nbsp = "all"
 nnbsp = "all"
 newline = "none"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
