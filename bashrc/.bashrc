@@ -17,8 +17,12 @@ export LINGO_20_HOME="$HOME/Documents/KUL/computergesteund_probleemoplossen/labs
 
 export HELIX_RUNTIME="$HOME/.local/opt/helix/runtime"
 
+export GOPATH="$HOME/.local/opt/gopath"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/opt/cargo/bin:$PATH"
+export PATH="$HOME/.local/opt/go/bin:$PATH"
+export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.local/opt/.ghcup/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.local/opt/elan_home/toolchains/leanprover--lean4---v4.13.0/bin:$PATH"
