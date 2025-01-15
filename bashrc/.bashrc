@@ -19,6 +19,8 @@ export HELIX_RUNTIME="$HOME/.local/opt/helix/runtime"
 
 export GOPATH="$HOME/.local/opt/gopath"
 
+export ROSWELL_HOME="$HOME/.local/opt/roswellhome"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/opt/cargo/bin:$PATH"
 export PATH="$HOME/.local/opt/go/bin:$PATH"
