@@ -20,6 +20,10 @@ vim.keymap.set("x", "<leader>p", "\"_dP", { desc = "Paste without changing regis
 vim.keymap.set("n", "<leader>d", "\"_d", { desc = "Delete without changing register" })
 vim.keymap.set("v", "<leader>d", "\"_d", { desc = "Delete without changing register" })
 
+-- Quickly change buffers
+vim.keymap.set("n", "gn", ":bnext<CR>", { desc = "Goto next buffer" })
+vim.keymap.set("n", "gp", ":bprevious<CR>", { desc = "Goto previous buffer" })
+
 -- Better indenting
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
