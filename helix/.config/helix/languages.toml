@@ -20,6 +20,8 @@ command = "clippy"
 
 [[language]]
 name = "scheme"
+auto-format = true
+formatter = { command = "lua", args = ["/home/kilianvounckx/.config/helix/parinfer-lua/parinfer.lua"] }
 language-servers = ["steel-language-server"]
 
 [language-server.steel-language-server]
