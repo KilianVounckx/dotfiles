@@ -26,3 +26,7 @@ language-servers = ["steel-language-server"]
 
 [language-server.steel-language-server]
 command = "steel-language-server"
+
+[[language]]
+name = "haskell"
+auto-format = true
