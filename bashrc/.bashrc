@@ -19,6 +19,8 @@ export GOPATH="$HOME/.local/opt/gopath"
 
 export STEEL_HOME="$HOME/.cache/steel"
 
+export OPAMROOT="$HOME/.local/opt/opam"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$HOME/.local/opt/go/bin:$PATH"
