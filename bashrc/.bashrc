@@ -10,6 +10,7 @@ export CARGO_HOME="$HOME/.local/opt/cargo"
 export RUSTUP_HOME="$HOME/.local/opt/rustup"
 
 export ELAN_HOME="$HOME/.local/opt/elan_home"
+[ -s "$ELAN_HOME/env" ] && \. "$ELAN_HOME/env"
 
 export GHCUP_INSTALL_BASE_PREFIX="$HOME/.local/opt"
 
@@ -33,5 +34,4 @@ export PATH="$HOME/.local/opt/go/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
-export PATH="$ELAN_HOME/toolchains/leanprover--lean4---v4.13.0/bin:$PATH"
 export PATH="$PATH:$HOME/.dotnet/tools"
