@@ -1,3 +1,5 @@
+local bashls = {}
+
 local bqnlsp = {}
 
 local gdscript = {}
@@ -165,6 +167,7 @@ return {
                 lspconfig[lsp].setup(cfg)
             end
 
+            setup("bashls", bashls)
             setup("bqnlsp", bqnlsp)
             setup("gdscript", gdscript)
             setup("gleam", gleam)
