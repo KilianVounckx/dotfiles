@@ -24,7 +24,10 @@
       "U": "vim::Redo",
       "g p": "pane::ActivatePrevItem",
       "g n": "pane::ActivateNextItem",
-      "space enter": "repl::Run"
+      "space enter": "repl::Run",
+      "space r": "editor::Rename",
+      "space a": "editor::ToggleCodeActions",
+      "space k": "editor::Hover"
     }
   },
   {
