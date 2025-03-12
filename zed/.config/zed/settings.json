@@ -65,6 +65,9 @@
     }
   },
   "languages": {
+    "Haskell": {
+      "tab_size": 2
+    },
     "Python": {
       "language_servers": ["pyright", "ruff"],
       "format_on_save": "on",
