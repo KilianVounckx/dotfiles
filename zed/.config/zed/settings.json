@@ -29,6 +29,8 @@
     "file_icons": true
   },
   "use_autoclose": false,
+  "use_auto_surround": false,
+  "use_on_type_format": false,
   "inlay_hints": {
     "enabled": true
   },
@@ -47,10 +49,10 @@
       }
     },
     "rust-analyzer": {
-      "checkOnSave": {
-        "command": "clippy"
-      },
       "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        },
         "inlayHints": {
           "maxLength": null,
           "lifetimeElisionHints": {
