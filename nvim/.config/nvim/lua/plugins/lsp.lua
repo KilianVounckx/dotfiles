@@ -40,6 +40,8 @@ local lua_ls = {
     },
 }
 
+local nushell = {}
+
 local purescriptls = {}
 
 local roc_ls = {}
@@ -174,6 +176,7 @@ return {
             setup("hls", hls)
             setup("jedi_language_server", jedi_language_server)
             setup("lua_ls", lua_ls)
+            setup("nushell", nushell)
             setup("purescriptls", purescriptls)
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)

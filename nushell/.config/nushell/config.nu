@@ -27,5 +27,5 @@ $env.PROMPT_COMMAND = {
         | str replace $"!!($env.HOME)" ~
         | str trim --left --char '!'
     )
-    $"($env.USERNAME)@($pwd_part)"
+    $"($env.USERNAME)@(ansi --escape {attr: b})($pwd_part)(ansi reset)"
 }
