@@ -16,3 +16,16 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+$env.config.buffer_editor = "nvim"
+
+$env.config.show_banner = false
+
+$env.PROMPT_COMMAND = {
+    let pwd_part = (
+        $"!!(pwd)"
+        | str replace $"!!($env.HOME)" ~
+        | str trim --left --char '!'
+    )
+    $"($env.USERNAME)@($pwd_part)"
+}

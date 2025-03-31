@@ -1,5 +1,7 @@
 theme = catppuccin-frappe
 
+command=nu
+
 window-height=10000
 window-width=10000
 

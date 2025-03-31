@@ -1,9 +1,0 @@
-exit
-$env.config.buffer_editor
-which nvim
-$env.config.buffer_editor="nvim"
-$env.config.buffer_editor = "nvim"
-start foo
-config nu
-clear
-exit
