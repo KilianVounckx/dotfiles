@@ -29,3 +29,7 @@ $env.PROMPT_COMMAND = {
     )
     $"($env.USERNAME)@(ansi --escape {attr: b})($pwd_part)(ansi reset)"
 }
+
+source git-completions.nu
+source cargo-completions.nu
+source just-completions.nu
