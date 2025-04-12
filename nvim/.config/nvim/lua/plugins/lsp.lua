@@ -58,6 +58,8 @@ local rust_analyzer = {
 
 local tinymist = {}
 
+local ts_ls = {}
+
 local uiua = {}
 
 local zls = {}
@@ -181,6 +183,7 @@ return {
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
             setup("tinymist", tinymist)
+            setup("ts_ls", ts_ls)
             setup("uiua", uiua)
             setup("zls", zls)
 
