@@ -62,7 +62,11 @@ local ts_ls = {}
 
 local uiua = {}
 
-local zls = {}
+local zls = {
+    settings = {
+        enable_build_on_save = true,
+    }
+}
 
 local function on_attach(event)
     local function opts_with(opts)
