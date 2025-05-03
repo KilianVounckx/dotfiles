@@ -10,6 +10,8 @@ local hls = {}
 
 local jedi_language_server = {}
 
+local koka = {}
+
 local lua_ls = {
     on_init = function(client)
         if client.workspace_folders then
@@ -187,6 +189,7 @@ return {
             setup("gleam", gleam)
             setup("hls", hls)
             setup("jedi_language_server", jedi_language_server)
+            setup("koka", koka)
             setup("lua_ls", lua_ls)
             setup("nushell", nushell)
             setup("purescriptls", purescriptls)
