@@ -171,14 +171,14 @@ return {
             "hrsh7th/cmp-nvim-lsp",
         },
         config = function()
-            local lspconfig = require("lspconfig")
             local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
             vim.lsp.inlay_hint.enable()
 
             local function setup(lsp, cfg)
                 cfg.capabilities = capabilities
-                lspconfig[lsp].setup(cfg)
+                vim.lsp.config(lsp, cfg)
+                vim.lsp.enable(lsp)
             end
 
             setup("bashls", bashls)
