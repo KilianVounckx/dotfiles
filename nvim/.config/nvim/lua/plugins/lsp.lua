@@ -42,7 +42,13 @@ local lua_ls = {
 
 local nushell = {}
 
-local purescriptls = {}
+local purescriptls = {
+    settings = {
+        purescript = {
+            formatter = "purs-tidy",
+        },
+    },
+}
 
 local roc_ls = {}
 
