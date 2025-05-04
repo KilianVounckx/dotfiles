@@ -39,7 +39,6 @@ vim.opt.whichwrap:append({
 
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking text",
-    group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
     callback = function()
         vim.highlight.on_yank()
     end,
@@ -47,7 +46,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 vim.opt.shell = "nu"
 vim.api.nvim_create_autocmd("TermOpen", {
-    group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
     callback = function()
         vim.opt.number = false
         vim.opt.relativenumber = false
