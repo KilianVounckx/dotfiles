@@ -51,7 +51,21 @@ local function toggle_terminal()
     end
 end
 
+local function clear_terminal()
+    local old_scrollback = vim.opt_local.scrollback
+    vim.opt_local.scrollback = 1
+    vim.api.nvim_command("startinsert")
+    vim.api.nvim_feedkeys("clear", "t", false)
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<cr>", true, false, true), "t", true)
+    vim.opt_local.scrollback = old_scrollback
+end
+
 vim.api.nvim_create_user_command("Floaterminal", toggle_terminal, {})
 vim.keymap.set({ "n", "t" }, "<leader>tt", toggle_terminal)
+vim.keymap.set(
+    "t",
+    "<leader>cc",
+    clear_terminal
+)
 
 vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>")
