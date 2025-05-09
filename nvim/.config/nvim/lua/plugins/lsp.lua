@@ -44,6 +44,8 @@ local lua_ls = {
 
 local nushell = {}
 
+local ols = {}
+
 local purescriptls = {
     settings = {
         purescript = {
@@ -192,6 +194,7 @@ return {
             setup("koka", koka)
             setup("lua_ls", lua_ls)
             setup("nushell", nushell)
+            setup("ols", ols)
             setup("purescriptls", purescriptls)
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
