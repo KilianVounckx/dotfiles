@@ -56,5 +56,6 @@ vim.filetype.add({
     extension = {
         bqn = "bqn",
         ua = "uiua",
+        kk = "koka",
     },
 })
