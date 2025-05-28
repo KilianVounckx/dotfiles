@@ -17,7 +17,7 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.config.buffer_editor = "nvim"
+$env.config.buffer_editor = "hx"
 
 $env.config.show_banner = false
 
@@ -33,3 +33,7 @@ $env.PROMPT_COMMAND = {
 source git-completions.nu
 source cargo-completions.nu
 source just-completions.nu
+
+use std/dirs shells-aliases *
+
+alias fg = job unfreeze
