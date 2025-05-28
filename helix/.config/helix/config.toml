@@ -4,6 +4,7 @@ theme = "catppuccin_frappe"
 scrolloff = 8
 rulers = [80, 100]
 auto-pairs = false
+shell = ["nu", "--env-config", "~/.config/nushell/env.nu", "--config", "~/.config/nushell/config.nu", "-c"]
 
 [editor.statusline]
 left = ["mode", "file-name", "read-only-indicator", "file-modification-indicator"]
