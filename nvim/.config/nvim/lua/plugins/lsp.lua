@@ -66,6 +66,8 @@ local rust_analyzer = {
     },
 }
 
+local sourcekit = {}
+
 local tinymist = {}
 
 local ts_ls = {}
@@ -198,6 +200,7 @@ return {
             setup("purescriptls", purescriptls)
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
+            setup("sourcekit", sourcekit)
             setup("tinymist", tinymist)
             setup("ts_ls", ts_ls)
             setup("uiua", uiua)

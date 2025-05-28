@@ -30,6 +30,8 @@ export NVM_DIR="$HOME/.local/opt/nvm"
 
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 
+export SWIFTLY_HOME_DIR="$HOME/.local/opt/swiftly"
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$HOME/.local/opt/go/bin:$PATH"
@@ -39,3 +41,4 @@ export PATH="$HOME/.cabal/bin:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
 export PATH="$HOME/.local/opt/juliaup/bin:$PATH"
 export PATH="$HOME/.local/opt/kotlinc/bin:$PATH"
+export PATH="$HOME/.local/share/swiftly/bin:$PATH"
