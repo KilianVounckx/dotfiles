@@ -50,3 +50,29 @@ auto-format = false
 comment-token = "--"
 indent = { tab-width = 4, unit = "    " }
 language-servers = [ "ucm" ]
+
+[[language]]
+name = "ante"
+scope = "source.an"
+injection-regex = "ante"
+file-types = ["an"]
+shebangs = []
+roots = []
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+language-servers = ["ante-ls"]
+
+[language-server.ante-ls]
+command = "ante-ls"
+
+[[language]]
+name = "effekt"
+scope = "source.effekt"
+injection-regex = "effekt"
+file-types = ["an"]
+shebangs = []
+roots = []
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
