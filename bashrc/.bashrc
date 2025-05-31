@@ -21,6 +21,7 @@ export GOPATH="$HOME/.local/opt/gopath"
 export STEEL_HOME="$HOME/.cache/steel"
 
 export OPAMROOT="$HOME/.local/opt/opam"
+eval $(opam env)
 
 export NVM_DIR="$HOME/.local/opt/nvm"
 
