@@ -1,7 +1,5 @@
 vim.keymap.set("n", "U", "<C-r>", { desc = "Redo" })
 
-vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "Open file explorer" })
-
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line down" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line up" })
 

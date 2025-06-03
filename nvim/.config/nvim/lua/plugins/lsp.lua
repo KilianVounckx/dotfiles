@@ -105,7 +105,7 @@ local function on_attach(event)
         opts_with({ desc = "Goto declaration" })
     )
     vim.keymap.set(
-        "n", "go",
+        "n", "gt",
         "<cmd>lua vim.lsp.buf.type_definition()<cr>",
         opts_with({ desc = "Goto type definition" })
     )
@@ -208,7 +208,7 @@ return {
 
             vim.api.nvim_create_autocmd("BufWritePre", {
                 desc = "LSP Format",
-                callback = function(event)
+                callback = function(_)
                     vim.lsp.buf.format({})
                 end,
             })
