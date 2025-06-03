@@ -139,6 +139,16 @@ local function on_attach(event)
         "<cmd>lua vim.diagnostic.open_float(nil, { focusable = true })<cr>",
         opts_with({ desc = "Show diagnostic" })
     )
+    vim.keymap.set(
+        "n", "]d",
+        "<cmd>lua vim.diagnostic.jump({ count = 1, float = true })<cr>",
+        opts_with({ desc = "Goto next diagnostic" })
+    )
+    vim.keymap.set(
+        "n", "[d",
+        "<cmd>lua vim.diagnostic.jump({ count = -1, float = true })<cr>",
+        opts_with({ desc = "Goto previous diagnostic" })
+    )
 end
 
 return {
