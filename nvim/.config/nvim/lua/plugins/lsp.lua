@@ -6,6 +6,8 @@ local gdscript = {}
 
 local gleam = {}
 
+local gopls = {}
+
 local hls = {}
 
 local jedi_language_server = {}
@@ -201,6 +203,7 @@ return {
             setup("bqnlsp", bqnlsp)
             setup("gdscript", gdscript)
             setup("gleam", gleam)
+            setup("gopls", gopls)
             setup("hls", hls)
             setup("jedi_language_server", jedi_language_server)
             setup("koka", koka)
