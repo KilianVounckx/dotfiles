@@ -10,6 +10,10 @@ local gopls = {}
 
 local hls = {}
 
+local jdtls = {
+    cmd = { "jdtls", "--java-executable", "/usr/lib/jvm/java-21-openjdk-amd64/bin/java" },
+}
+
 local jedi_language_server = {}
 
 local koka = {}
@@ -205,6 +209,7 @@ return {
             setup("gleam", gleam)
             setup("gopls", gopls)
             setup("hls", hls)
+            setup("jdtls", jdtls)
             setup("jedi_language_server", jedi_language_server)
             setup("koka", koka)
             setup("lua_ls", lua_ls)

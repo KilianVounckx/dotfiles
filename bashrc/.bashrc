@@ -29,7 +29,7 @@ export NVM_DIR="$HOME/.local/opt/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 
 export SWIFTLY_HOME_DIR="$HOME/.local/opt/swiftly"
 
