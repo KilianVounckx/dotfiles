@@ -32,7 +32,7 @@ vim.opt.colorcolumn = "80,100"
 vim.opt.list = true
 vim.opt.listchars = "eol:↵,tab:→·,lead:·,trail:·,nbsp:⍽,extends:◣,precedes:◢"
 
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 vim.opt.whichwrap:append({
     ["h"] = true,
