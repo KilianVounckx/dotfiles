@@ -2,6 +2,8 @@ local bashls = {}
 
 local bqnlsp = {}
 
+local clojure_lsp = {}
+
 local gdscript = {}
 
 local gleam = {}
@@ -161,7 +163,8 @@ return {
     {
         "hrsh7th/nvim-cmp",
         dependencies = {
-            { 'L3MON4D3/LuaSnip' },
+            { "L3MON4D3/LuaSnip" },
+            { "PaterJason/cmp-conjure" },
         },
         event = "InsertEnter",
         config = function()
@@ -181,6 +184,7 @@ return {
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
                     { name = "luasnip" },
+                    { name = "conjure" },
                 }, {
                     { name = "buffer" },
                 }),
@@ -205,6 +209,7 @@ return {
 
             setup("bashls", bashls)
             setup("bqnlsp", bqnlsp)
+            setup("clojure_lsp", clojure_lsp)
             setup("gdscript", gdscript)
             setup("gleam", gleam)
             setup("gopls", gopls)
