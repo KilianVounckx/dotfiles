@@ -1,6 +1,12 @@
 return {
     { "gpanders/nvim-parinfer" },
-    { "Olical/conjure" },
+    {
+        enabled = false,
+        "Olical/conjure",
+        config = function()
+            vim.g["conjure#filetypes"] = { "clojure" }
+        end,
+    },
     {
         "clojure-vim/vim-jack-in",
         dependencies = {

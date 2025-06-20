@@ -164,7 +164,7 @@ return {
         "hrsh7th/nvim-cmp",
         dependencies = {
             { "L3MON4D3/LuaSnip" },
-            { "PaterJason/cmp-conjure" },
+            -- { "PaterJason/cmp-conjure" },
         },
         event = "InsertEnter",
         config = function()
