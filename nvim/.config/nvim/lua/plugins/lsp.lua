@@ -4,6 +4,8 @@ local bqnlsp = {}
 
 local clojure_lsp = {}
 
+local elmls = {}
+
 local gdscript = {}
 
 local gleam = {}
@@ -210,6 +212,7 @@ return {
             setup("bashls", bashls)
             setup("bqnlsp", bqnlsp)
             setup("clojure_lsp", clojure_lsp)
+            setup("elmls", elmls)
             setup("gdscript", gdscript)
             setup("gleam", gleam)
             setup("gopls", gopls)
