@@ -59,6 +59,7 @@ vim.filetype.add({
         bqn = "bqn",
         ua = "uiua",
         kk = "koka",
+        flix = "flix",
     },
 })
 

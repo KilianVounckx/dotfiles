@@ -37,3 +37,4 @@ source just-completions.nu
 use std/dirs shells-aliases *
 
 alias fg = job unfreeze
+alias flix = java -jar $"($env.HOME)/.local/opt/flix/flix.jar"

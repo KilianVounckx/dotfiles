@@ -232,6 +232,21 @@ return {
             setup("uiua", uiua)
             setup("zls", zls)
 
+            vim.lsp.config("flix", {
+                cmd = { "java", "-jar", "/home/kilianvounckx/.local/opt/flix/flix.jar", "lsp" },
+                filetypes = { "flix" },
+                root_dir = function(bufnr, on_dir)
+                    local fname = vim.api.nvim_buf_get_name(bufnr)
+                    local filetype = vim.api.nvim_buf_get_option(0, "filetype")
+                    if filetype == "flix" or (filetype == "toml" and fname:match("flix%.toml$")) then
+                        on_dir(vim.fs.root(fname, "flix.toml"))
+                        return
+                    end
+                    on_dir(nil)
+                end,
+            })
+            vim.lsp.enable("flix")
+
             vim.api.nvim_create_autocmd("BufWritePre", {
                 desc = "LSP Format",
                 callback = function(_)
