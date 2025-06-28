@@ -84,6 +84,8 @@ local ts_ls = {}
 
 local uiua = {}
 
+local unison = {}
+
 local zls = {
     settings = {
         enable_build_on_save = true,
@@ -230,6 +232,7 @@ return {
             setup("tinymist", tinymist)
             setup("ts_ls", ts_ls)
             setup("uiua", uiua)
+            setup("unison", unison)
             setup("zls", zls)
 
             vim.lsp.config("flix", {
