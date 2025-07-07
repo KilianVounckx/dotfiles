@@ -64,6 +64,8 @@ local purescriptls = {
     },
 }
 
+local rescriptls = {}
+
 local roc_ls = {}
 
 local rust_analyzer = {
@@ -226,6 +228,7 @@ return {
             setup("nushell", nushell)
             setup("ols", ols)
             setup("purescriptls", purescriptls)
+            setup("rescriptls", rescriptls)
             setup("roc_ls", roc_ls)
             setup("rust_analyzer", rust_analyzer)
             setup("sourcekit", sourcekit)

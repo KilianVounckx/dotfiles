@@ -60,6 +60,7 @@ vim.filetype.add({
         ua = "uiua",
         kk = "koka",
         flix = "flix",
+        res = "rescript",
     },
 })
 
